@@ -2,7 +2,6 @@ import React from "react";
 import Navbar from "../public/nav/Navbar";
 import Header from "./header/Header";
 import { Outlet } from "react-router";
-import "./app.css";
 
 function Layout() {
   return (
