@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../public/nav/Navbar";
+import Navbar from "./nav/Navbar";
 import Header from "./header/Header";
 import { Outlet } from "react-router";
 

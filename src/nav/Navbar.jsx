@@ -1,11 +1,10 @@
 import React from "react";
 import { NavLink } from "react-router";
-import "./Navbar.css";
 
 function Navbar() {
   return (
     <>
-      <div className="flex justify-center bg-navbarColor  border-solid border border-t-0 border-jet rounded-tr-2xl xl:rounded-bl-2xl rounded-tl-2xl xl:rounded-tl-none  p-4 w-full xl:w-1/2">
+      <div className="flex justify-center bg-navbarColor border-solid border border-t-0 border-jet rounded-tr-2xl xl:rounded-bl-2xl rounded-tl-2xl xl:rounded-tl-none p-4 w-full xl:w-1/2">
         <ul className="flex gap-5 tablet:gap-10">
           <li>
             <NavLink
