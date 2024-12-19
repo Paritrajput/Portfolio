@@ -1,34 +1,58 @@
-import React from "react";
+import React, { useState } from "react";
 import "./header.css";
 import { Link } from "react-router";
 
 function Header() {
-  const showDetail = () => {};
+  const [showDetail, setShowDetail] = useState(false);
+  const showDetailFunc = () => {
+    setShowDetail(!showDetail);
+  };
   return (
     <div className="min-w-80 w-full tablet:w-full xl:w-auto ">
-      <div className="sidebar w-full min-w-80 tablet:w-full " data-sidebar="">
+      <div
+        className={`xl:h-full sidebar w-full min-w-80 tablet:w-full transition ease-in-out delay-500 transform ${
+          showDetail
+            ? " max-h-130 tablet:max-h-150 h-auto"
+            : "tablet:max-h-44 max-h-32 "
+        } `}
+        data-sidebar=""
+      >
         <div className="sidebar-info">
           <figure className="avatar-box">
             <img
               src="profile.jpg"
               alt="Parit Rajput
     "
-              width={80}
+              width={100}
+              className="rounded-lg"
             />
           </figure>
           <div className="info-content">
-            <h1 className="name" title="Parit Rajput">
+            <h1
+              className="text-white pb-3 text-2xl font-semibold"
+              title="Parit Rajput"
+            >
               Parit Rajput
             </h1>
             <p className="title">Web dev Enthusiast</p>
             <p className="title2">DSA Enthusiast</p>
           </div>
-          <button className="info_more-btn" data-sidebar-btn="">
+          <button
+            className="info_more-btn"
+            onClick={showDetailFunc}
+            data-sidebar-btn=""
+          >
             <span>Show Contacts</span>
             <ion-icon name="chevron-down" />
           </button>
         </div>
-        <div className="sidebar-info_more">
+        <div
+          className={` transition ease-in-out delay-500 transform ${
+            showDetail
+              ? "opacity-100 max-h-96 tablet:max-h-96 h-auto "
+              : "opacity-0 hidden w-80 "
+          } xl:opacity-100 xl:contents`}
+        >
           <div className="separator" />
           <ul className="contacts-list">
             <li className="contact-item">

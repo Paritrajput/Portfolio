@@ -3,32 +3,18 @@ import React from "react";
 function Resume() {
   return (
     <div className="">
-      <article className="text-start" data-page="resume">
+      <article className="text-start mt-1 pt-0 p-3" data-page="resume">
         <header>
-          <h2 className="h2 article-title">Resume</h2>
+          <h2 className="font-extrabold text-3xl article-title mb-2">Resume</h2>
         </header>
         <section className="timeline">
           <div className="title-wrapper">
             <div className="icon-box">
               <ion-icon name="book-outline" />
             </div>
-            <h3 className="h3">Education</h3>
+            <h3 className="font-bold text-2xl">Education</h3>
           </div>
           <ol className="timeline-list">
-            {/* <li class="timeline-item">
-
-                <h4 class="h4 timeline-item-title">University school of the arts</h4>
-
-                <span>2007 — 2008</span>
-
-                <p class="timeline-text">
-                    Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti,
-                    quos dolores et
-                    quas molestias
-                    exceptur.
-                </p>
-
-            </li> */}
             <li className="timeline-item">
               <h4 className="h4 timeline-item-title">
                 Rainbow Inter Collage ,Rampur ,Uttar Pradesh ,India
@@ -54,7 +40,7 @@ function Resume() {
             <div className="icon-box">
               <ion-icon name="book-outline" />
             </div>
-            <h3 className="h3">Academic Achievments</h3>
+            <h3 className="font-bold text-2xl">Academic Achievments</h3>
           </div>
           <ol className="timeline-list">
             <li className="timeline-item">
@@ -83,7 +69,7 @@ function Resume() {
             <div className="icon-box">
               <ion-icon name="book-outline" />
             </div>
-            <h3 className="h3">Experience</h3>
+            <h3 className="font-bold text-2xl">Experience</h3>
           </div>
           <ol className="timeline-list">
             <li className="timeline-item">
@@ -121,8 +107,8 @@ function Resume() {
           </ol>
         </section>
         <section className="skill">
-          <h3 className="h3 skills-title">My skills</h3>
-          <ul className="skills-list content-card bg-stone-800/50 rounded-lg">
+          <h3 className="font-bold text-2xl skills-title">My skills</h3>
+          <ul className="skills-list content-card bg-stone-800/60 border-solid border border-jet rounded-lg">
             <li className="skills-item">
               <div className="title-wrapper">
                 <h5 className="h5">Web development</h5>

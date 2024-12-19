@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "title": "Netflix Clone",
+        "description": "",
+        "category": "Web Developement",
+        "coverImg": "netflix.jpg",
+        "link": "https://netflix-clone-11-02-2024-iekoyy17s-paritrajputs-projects.vercel.app",
+        "githubLink": ""
+    },
+    {
+        "id": 2,
+        "title": "spotilite (An Music App)",
+        "description": "A music website",
+        "category": "Web Developement",
+        "coverImg": "spoty.jpg",
+        "link": "https://spotify-clone-11-02-2024-za55-16p48lwxm-paritrajputs-projects.vercel.app",
+        "githubLink": ""
+    },
+    {
+        "id": 3,
+        "title": "Rock Paper Scissior",
+        "description": "",
+        "category": "Game",
+        "coverImg": "rockpprscr.jpg",
+        "link": "",
+        "githubLink": ""
+    }
+]
