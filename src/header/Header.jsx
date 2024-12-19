@@ -3,12 +3,10 @@ import "./header.css";
 import { Link } from "react-router";
 
 function Header() {
-  const showDetail=()=>{
-    
-  }
+  const showDetail = () => {};
   return (
-    <div className="w-80 ">
-      <div className="sidebar" data-sidebar="">
+    <div className="min-w-80 w-full tablet:w-full xl:w-auto ">
+      <div className="sidebar w-full min-w-80 tablet:w-full " data-sidebar="">
         <div className="sidebar-info">
           <figure className="avatar-box">
             <img

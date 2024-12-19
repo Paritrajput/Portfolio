@@ -134,6 +134,8 @@
     padding: 15px;
     box-shadow: var(--shadow-1);
     z-index: 1;
+    width: 100%;
+    min-width: 180px;
   }
   .title{
     padding-top: 4px;
@@ -208,6 +210,8 @@
     max-height: 112px;
     overflow: hidden;
     transition: var(--transition-2);
+    width: 100%;
+    min-width: 180px;
   }
   
   .sidebar.active { max-height: 405px; }
@@ -384,7 +388,7 @@
      */
   
     .sidebar, article {
-      width: 520px;
+      width: 100%;
       margin-inline: auto;
       padding: 30px;
     }
@@ -473,7 +477,10 @@
     /**
      * SIDEBAR
      */
-  
+     .sidebar {
+      width: 90%;
+      
+    }
     .contacts-list {
       grid-template-columns: 1fr 1fr;
       gap: 30px 15px;
